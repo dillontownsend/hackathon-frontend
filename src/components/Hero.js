@@ -1,11 +1,11 @@
 import React from 'react'
 import Neutral from '../images/neutral.jpg'
-import Logo from '../images/logo.png'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
         <div>
-            <section class="bg-gray-100">
+            <section class="bg-gray-200">
                 
                 
                 <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left">
@@ -18,24 +18,26 @@ const Hero = () => {
                                     to net zero
                                     </span>
                                 </h1>
-                                <a
+                                <Link
                                     class="inline-block px-7 py-3 mr-2 bg-logoBlue text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-logoDark hover:shadow-lg focus:bg-logoDark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                                     data-mdb-ripple="true"
                                     data-mdb-ripple-color="light"
                                     href="#!"
                                     role="button"
+                                    to={'/register'}
                                 >
-                                    Get started
-                                </a>
-                                <a
+                                    Register
+                                </Link>
+                                <Link
                                     class="inline-block px-7 py-3 bg-transparent text-logoBlue font-medium text-sm leading-snug uppercase rounded hover:text-logoDark hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
                                     data-mdb-ripple="true"
                                     data-mdb-ripple-color="light"
                                     href="#!"
                                     role="button"
+                                    to={'/login'}
                                 >
-                                    Learn more
-                                </a>
+                                    Login
+                                </Link>
                             </div>
                             <div class="mb-12 lg:mb-0">
                                 <img

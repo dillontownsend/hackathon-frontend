@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import Eco from '../images/eco.png'
+import Logo from '../images/logo.png'
 
 const Register = () => {
     const navigate = useNavigate()
@@ -32,16 +34,18 @@ const Register = () => {
             <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
                 <div className="container max-w-screen-lg mx-auto">
                     <div>
-                        <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+                        <div className="bg-white rounded shadow-lg pb-4 px-4 md:px-8 md:pb-8 mb-6">
+                            <img src={Logo} alt="" className='mx-auto' />
                             <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                                <div className="text-gray-600">
-                                    <p className="font-medium text-lg">
+                                <div className="text-gray-600 flex flex-col items-center justify-center">
+                                    <p className="font-medium text-2xl my-4">
                                         Registration
                                     </p>
                                     <p>
                                         Please fill out all the fields with your
                                         company information.
                                     </p>
+                                    <img className='max-w-sm' src={Eco} alt="" />
                                 </div>
 
                                 <div className="lg:col-span-2">
@@ -151,7 +155,7 @@ const Register = () => {
 
                                         <div className="md:col-span-5 text-right mt-4">
                                             <div className="inline-flex items-end">
-                                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => submit()}>
+                                                <button className="bg-logoBlue hover:bg-logoDark text-white font-bold py-2 px-4 rounded" onClick={() => submit()}>
                                                     Register
                                                 </button>
                                             </div>

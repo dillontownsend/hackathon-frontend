@@ -59,7 +59,7 @@ const Register = () => {
                                                 name="full_name"
                                                 id="full_name"
                                                 className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                                placeholder="Google"
+                                                placeholder="British Petroleum"
                                                 onChange={e => setCompany(e.target.value)}
                                             />
                                         </div>
